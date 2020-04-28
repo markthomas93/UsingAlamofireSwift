@@ -14,7 +14,35 @@
 		DD2C0C68245864F100F30EAC /* faseDois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD2C0C66245864F100F30EAC /* faseDois.xcdatamodeld */; };
 		DD2C0C6A2458650000F30EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2C0C692458650000F30EAC /* Assets.xcassets */; };
 		DD2C0C6D2458650000F30EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2C0C6B2458650000F30EAC /* LaunchScreen.storyboard */; };
+		DD2C0C752458962500F30EAC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C0C742458962500F30EAC /* TableViewCell.swift */; };
+		DD2C0C912458A32800F30EAC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2C0C902458A32800F30EAC /* Alamofire.framework */; };
+		DD2C0C922458A32800F30EAC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD2C0C902458A32800F30EAC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD2C0C972458A3F900F30EAC /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD2C0C962458A3F900F30EAC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD2C0C932458A32800F30EAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD2C0C922458A32800F30EAC /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2C0C952458A3E100F30EAC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				DD2C0C972458A3F900F30EAC /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DD2C0C5A245864F100F30EAC /* faseDois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faseDois.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +54,9 @@
 		DD2C0C692458650000F30EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2C0C6C2458650000F30EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2C0C6E2458650000F30EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2C0C742458962500F30EAC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DD2C0C902458A32800F30EAC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DD2C0C962458A3F900F30EAC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2C0C912458A32800F30EAC /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +74,10 @@
 		DD2C0C51245864F100F30EAC = {
 			isa = PBXGroup;
 			children = (
+				DD2C0C962458A3F900F30EAC /* Alamofire.framework */,
 				DD2C0C5C245864F100F30EAC /* faseDois */,
 				DD2C0C5B245864F100F30EAC /* Products */,
+				DD2C0C8F2458A32800F30EAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +95,7 @@
 				DD2C0C5D245864F100F30EAC /* AppDelegate.swift */,
 				DD2C0C5F245864F100F30EAC /* SceneDelegate.swift */,
 				DD2C0C61245864F100F30EAC /* ViewController.swift */,
+				DD2C0C742458962500F30EAC /* TableViewCell.swift */,
 				DD2C0C63245864F100F30EAC /* Main.storyboard */,
 				DD2C0C692458650000F30EAC /* Assets.xcassets */,
 				DD2C0C6B2458650000F30EAC /* LaunchScreen.storyboard */,
@@ -68,6 +103,14 @@
 				DD2C0C66245864F100F30EAC /* faseDois.xcdatamodeld */,
 			);
 			path = faseDois;
+			sourceTree = "<group>";
+		};
+		DD2C0C8F2458A32800F30EAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD2C0C902458A32800F30EAC /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +123,9 @@
 				DD2C0C56245864F100F30EAC /* Sources */,
 				DD2C0C57245864F100F30EAC /* Frameworks */,
 				DD2C0C58245864F100F30EAC /* Resources */,
+				DD2C0C932458A32800F30EAC /* Embed Frameworks */,
+				DD2C0C942458A37F00F30EAC /* ShellScript */,
+				DD2C0C952458A3E100F30EAC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -136,11 +182,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DD2C0C942458A37F00F30EAC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD2C0C56245864F100F30EAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2C0C752458962500F30EAC /* TableViewCell.swift in Sources */,
 				DD2C0C62245864F100F30EAC /* ViewController.swift in Sources */,
 				DD2C0C5E245864F100F30EAC /* AppDelegate.swift in Sources */,
 				DD2C0C60245864F100F30EAC /* SceneDelegate.swift in Sources */,
@@ -289,6 +357,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 693UXZ5SG6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = faseDois/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +379,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 693UXZ5SG6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = faseDois/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
